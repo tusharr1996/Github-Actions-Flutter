@@ -23,3 +23,7 @@ jobs:
       - name: build iOS package
         run: |
           flutter build ios --release --no-codesign
+      - uses: actions/upload-artifact@v1
+        with:
+          name: ios-app
+          path: /Users/runner/work/Github-Actions-Flutter/Github-Actions-Flutter/build/ios/iphoneos/Runner.app
